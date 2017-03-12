@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Facial Expression Maker</h1>
+    <dl>
+    <dt>Eyebrows 眉</dt>
+    <dd onClick="change1()">Normal 無表情</dd>
+    <dd onClick="change2()">Anger 怒り</dd>
+    <dd onClick="change3()">Laugh 笑顔</dd>
+      </dl>
+      <dl>
+        <dt>Eyes 目</dt>
+            <dd onClick="change4()">Normal 無表情</dd>
+    <dd onClick="change5()">Anger 怒り</dd>
+    <dd onClick="change6()">Laugh 笑顔</dd>
+        </dl>
+        <dl>
+        <dt>Nose and Mouth 鼻と口</dt>
+    <dd onClick="change7()">Normal 無表情</dd>
+    <dd onClick="change8()">Anger 怒り</dd>
+    <dd onClick="change9()">Laugh 笑顔</dd>
+    </dl>
+    <div class="face">
+        <figure class="show" id="no1"><img src="images/norB.png"></figure>
+        <figure class="off" id="no2"><img src="images/angB.png"></figure>
+        <figure class="off" id="no3"><img src="images/smiB.png"></figure>
+        <figure class="show" id="no4"><img src="images/norE.png"></figure>
+        <figure class="off" id="no5"><img src="images/angE.png"></figure>
+        <figure class="off" id="no6"><img src="images/smiE.png"></figure>
+        <figure class="show" id="no7"><img src="images/norM.png"></figure>
+        <figure class="off" id="no8"><img src="images/angM.png"></figure>
+        <figure class="off" id="no9"><img src="images/smiM.png"></figure>
+    </div>
+
+<script type="text/javascript">
+function change1(){
+    document.getElementById("no1").className="show";
+    document.getElementById("no2").className="off";
+    document.getElementById("no3").className="off";
+}
+function change2(){
+    document.getElementById("no2").className="show";
+document.getElementById("no3").className="off";
+document.getElementById("no1").className="off";
+}
+function change3(){
+    document.getElementById("no3").className="show";
+    document.getElementById("no2").className="off";
+document.getElementById("no1").className="off";
+}
+function change4(){
+    document.getElementById("no4").className="show";
+    document.getElementById("no5").className="off";
+document.getElementById("no6").className="off";
+}
+function change5(){
+    document.getElementById("no5").className="show";
+    document.getElementById("no4").className="off";
+document.getElementById("no6").className="off";
+}
+function change6(){
+    document.getElementById("no6").className="show";
+    document.getElementById("no4").className="off";
+document.getElementById("no5").className="off";
+}
+function change7(){
+    document.getElementById("no7").className="show";
+    document.getElementById("no8").className="off";
+document.getElementById("no9").className="off";
+}
+function change8(){
+    document.getElementById("no8").className="show";
+    document.getElementById("no7").className="off";
+document.getElementById("no9").className="off";
+}
+function change9(){
+    document.getElementById("no9").className="show";
+    document.getElementById("no7").className="off";
+document.getElementById("no8").className="off";
+}
+    </script>
+
+</body>
+</html>
